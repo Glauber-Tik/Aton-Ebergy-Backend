@@ -1,0 +1,192 @@
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.contato-grid-contato {
+  height: 100%;
+  padding: 20px 40px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 48px;
+}
+
+.icones img {
+  width: 50px;
+  height: 50px;
+}
+
+.duvida-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-meios figure img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.contato-meios {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+#email-contato {
+  /* define o tamanho do icone email */
+  max-width: none;
+}
+
+#mensagem {
+  width: 100%;
+  height: 150px;
+}
+
+.loja-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contato-loja-titulo {
+  display: flex;
+  align-items: center;
+}
+
+.contato-loja-titulo::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--cor-e4);
+  width: 6px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.contato-loja-desc p {
+  margin-left: 10px;
+}
+
+#contato-cep,
+#contato-estado {
+  display: inline-block;
+  padding-right: 100px;
+}
+
+.form-container button.botao-escuro {
+  justify-self: start;
+}
+
+
+.loja-grid-end{
+    height: 100%;
+    padding: 60px 60px;
+}
+
+@media (max-width: 780px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loja-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+.contato-grid-contato{
+  padding: 20px;
+}
+
+  .contato-meios {
+    font: var(--font-2-s);
+  }
+
+  .icones img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .loja-grid-end{
+    padding: 40px;
+  }
+
+
+  #contato-estado,
+  #contato-cep,
+  #contato-endereco,
+  #contato-horario {
+    font: var(--font-1-l);
+  }
+}
+
+@media (max-width: 380px) {
+
+  .contato-meios {
+    font: var(--font-2-xxxs);
+    word-break: break-all;
+    align-items: baseline;   
+  }
+
+  #email-contato,
+  #telefone-contato {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icones img,
+  .contato-meios figure img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contato-telefone,
+  .contato-email {
+    font: var(--font-1-m);
+  }
+}
+
+@media (max-width: 365px) {
+  .h1-contato-contato,
+  .h1-loja,
+  .h1-contato,
+  .contato-loja-titulo {
+    font: var(--font-1-l);
+  }
+
+  .contato-meios {
+    font: var(--font-1-xs);
+    padding: 10px;
+  }
+
+  .h1-contato-contato {
+    margin-left: 0px;
+  }
+
+  .icones img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 320px){
+  .h1-contato-contato, .h1-loja{
+    padding: 10px;
+    margin: 14px;
+  }
+
+  .loja-grid-end{
+    padding: 20px;
+  }
+
+
+}

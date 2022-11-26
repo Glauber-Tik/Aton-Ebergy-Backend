@@ -1,0 +1,32 @@
+.cromoIt {
+  height: 600px;
+  background-image: url(../../images/home-images/cromo-it.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cromoIt-desc {
+  max-width: 360px;
+  margin-left: 220px;
+  padding-top: 120px;
+}
+
+@media (max-width: 1200px) {
+  .cromoIt-desc {
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 850px) {
+  .cromoIt-desc {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cromoIt-desc {
+    margin-left: 16px;
+    padding-top: 80px;
+  }
+}
